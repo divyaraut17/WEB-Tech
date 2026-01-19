@@ -2,3 +2,12 @@ activity class
 1.number to string
 2.string to no
 3. convertion of all data type
+
+
+1. fun declaration
+2. fun definatin
+3 how to call fun
+
+all methods of string
+include
+split

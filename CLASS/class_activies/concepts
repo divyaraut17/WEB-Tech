@@ -1,0 +1,38 @@
+<!-- This file contains basic concepts of Web Technology and JavaScript -->
+
+•	What is Web Technology?
+--> Web Technology is used to create and run differnt web page,websites and interact with web applications.
+    It is also used to make webpages more interactive.
+    <!-- 
+    1. Web Technology is a collection of tools, languages and techniques used to build websites and web applications.
+    2. It includes technologies like HTML, CSS, JavaScript, databases.
+    3.It allows users to access information through the internet using browser.
+    -->
+
+•	Real-time examples of Web Technology
+--> There are various examples like Amazon, Flipkart, Myntra, Instagram, Ajio, etc.
+<!-- 
+1. These websites use web technologies to provide the online services.
+2. E commerce websites like the Amazon and Flipkart use the web technology for online shopping.
+3. Social media platforms like the Instagram use the web technology for communication and sharing the media.
+4. Every website or web application we use daily built using web technology. -->
+
+•	What is JavaScript?
+--> Javascript is a programming language which is used to make web pages more interactive.
+<!-- 
+1. Javascript is a client side scripting language.
+2. It helps to add the dynamic behavior to static pages.
+3. Using Javascript we can handle the events like button clicks forms, validation , animations etc.
+4. It is one of the core technologies of web development along with HTML and CSS. -->
+
+•	Which file extension is used for JavaScript?
+--> The file extension usedfor javascript is '.js' .
+<!-- 
+1. Example: Activity.js, main.js -->
+
+•	Why do we use Node.js?
+--> Node.js is used ti run javascript code outside the browser. 
+<!-- 
+1. Nodejs is a runtime environment for the Javascript.
+2. It is helpful for creating the web servers, APIs and the real time applications 
+3. We can run the JavaScript code inside the browser also , by writing it in console. -->
