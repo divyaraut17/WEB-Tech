@@ -7,6 +7,8 @@ console.log("sum is :"+result);
 
 
 //function for even and odd
+console.log("function for even and odd");
+
 function check(num){
     if(num % 2 == 0){
       console.log("even");
@@ -19,8 +21,11 @@ function check(num){
 }
 check(10);
 check(45);
+console.log("\n");
 
 //function to find sum of array
+console.log("function to find sum of array");
+
 function sum(arr){
     let sum=0;
     for(let i =0;i<arr.length;i++){

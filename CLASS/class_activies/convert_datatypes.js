@@ -62,6 +62,30 @@ console.log(boolun);
 
 
 
+/*
+Other Possible Conversions
+*/
+
+// null conversions
+console.log(Number(null));      // 0
+console.log(String(null));      // "null"
+console.log(Boolean(null));     // false
+
+// undefined conversions
+console.log(Number(undefined)); // NaN
+console.log(String(undefined)); // "undefined"
+console.log(Boolean(undefined));// false
+
+// Array to String
+let arr = [1, 2, 3];
+console.log(String(arr));       // "1,2,3"
+
+// Object to String
+let obj = { name: "Divya" };
+console.log(String(obj));       // "[object Object]"
+
+// Empty string to number
+console.log(Number(""));        // 0
 
 
 
