@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My DOM Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        button {
+            padding: 8px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1 id="mainTitle">Welcome to My Personal Website</h1>
+    <p id="subtitle">Learning Web Development Step by Step</p>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p id="aboutText">
+        Hello! My name is Divya. I am learning HTML, CSS and JavaScript.
+        I enjoy creating simple and interactive web pages.
+    </p>
+    <p id ="extraText">
+        Currently, I am focusing on improving my JavaScript and DOM skills.
+        I want to become a full stack developer in the future
+    </p>
+    <button id="changeBtn">Change About Text</button>
+</section>
+
+<section>
+    <h2>My Skills</h2>
+    <ul id="skillList">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <button id="addSkillBtn">Add New Skill</button>
+</section>
+<script>
+    const title = document.getElementById("mainTitle");
+    const aboutText = document.getElementById("aboutText");
+    const changeBtn = document.getElementById("changeBtn");
+    const addSkillBtn = document.getElementById("addSkillBtn");
+    const skillList = document.getElementById("skillList");
+
+    const skills = ["HTML", "CSS", "JavaScript", "React", "Python"];
+    let index = 0;
+
+    // Change About Text
+    changeBtn.addEventListener("click", function() {
+        aboutText.innerText = "I am improving my JavaScript and DOM skills every day!";
+        extraText.innerText = "Practice makes perfect. I am building projects to strengthen my knowledge.";
+        title.style.color = "blue";
+    });
+
+    // Add Different Skills
+    addSkillBtn.addEventListener("click", function() {
+
+        if (index < skills.length) {
+            const newSkill = document.createElement("li");
+            newSkill.innerText = skills[index];
+            skillList.appendChild(newSkill);
+            index++;
+        } else {
+            alert("All skills added!");
+        }
+
+    });
+</script>
+
+</body>
+</html>

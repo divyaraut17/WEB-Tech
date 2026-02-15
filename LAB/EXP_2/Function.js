@@ -36,3 +36,6 @@ function sum(arr){
 let arr1 =[1,2,3,4]
 console.log(sum(arr1));
 
+function add(num1, ){
+    
+}
