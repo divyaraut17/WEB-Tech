@@ -1,0 +1,198 @@
+<!--
+Assignment 1 – jQuery Event Handling Concepts
+-->
+
+<!--
+1. jQuery – Use
+jQuery is a JavaScript library.
+
+Use:
+It makes JavaScript work easy, short, and fast, especially for:
+- Handling events (click, keypress, mouse)
+- Changing HTML content
+- Animations
+- DOM manipulation
+
+Example:
+Instead of writing many lines in JavaScript, jQuery does the same work in 1–2 lines.
+-->
+
+<!--
+2. Event Type (type)
+Use:
+It tells which event happened.
+
+Examples of event types:
+- click
+- dblclick
+- keydown
+- mouseover
+
+Example meaning:
+If you click a button, event type is click.
+-->
+
+<!--
+3. Standard Event (type – standard)
+Use:
+Standard events are common events supported by all browsers.
+
+Examples:
+- click
+- keypress
+- mousemove
+- submit
+
+Meaning:
+These events work same in all browsers, so they are safe to use.
+-->
+
+<!--
+4. preventDefault()
+Use:
+Stops the default action of an element.
+
+Example:
+- Clicking a link normally opens a page
+- Submitting a form reloads the page
+
+If we use preventDefault():
+- Link will NOT open
+- Form will NOT reload
+
+Simple meaning:
+Stop browser’s automatic behavior.
+-->
+
+<!--
+5. target
+Use:
+Gives the exact element that triggered the event.
+
+Example:
+If you click on a button inside a div:
+target = button
+
+Meaning:
+Which element was clicked?
+-->
+
+<!--
+6. sourceElement
+Use:
+Also tells from which element the event started.
+
+Mostly used in old browsers.
+Similar to target.
+
+Meaning:
+From where did the event come?
+-->
+
+<!--
+7. currentTarget
+Use:
+Shows the element on which the event handler is attached.
+
+Difference:
+- target → where you clicked
+- currentTarget → where the event listener is applied
+
+Meaning:
+Which element is handling the event?
+-->
+
+<!--
+8. current tag
+Use:
+Refers to the currently active HTML tag during an event.
+
+Example:
+If event is running on <button>
+Current tag = <button>
+
+Meaning:
+Which HTML tag is currently working?
+-->
+
+<!--
+9. clientX
+Use:
+Gives X-axis position of mouse inside the browser window.
+
+Measured from left side of the visible page.
+
+Meaning:
+Horizontal mouse position (left to right).
+-->
+
+<!--
+10. clientY
+Use:
+Gives Y-axis position of mouse inside the browser window.
+
+Measured from top of the visible page.
+
+Meaning:
+Vertical mouse position (top to bottom).
+-->
+
+<!--
+11. screenX
+Use:
+Gives X-axis position of mouse based on entire screen.
+
+Includes:
+- Browser
+- Taskbar
+- Screen edges
+
+Meaning:
+Mouse position from screen left.
+-->
+
+<!--
+12. screenY
+Use:
+Gives Y-axis position of mouse based on entire screen.
+
+Meaning:
+Mouse position from screen top.
+-->
+
+<!--
+13. altKey
+Use:
+Checks whether Alt key is pressed or not.
+
+Returns:
+- true → Alt key pressed
+- false → Alt key not pressed
+
+Meaning:
+Was Alt key pressed during the event?
+-->
+
+<!--
+14. ctrlKey
+Use:
+Checks whether Ctrl key is pressed.
+
+Example:
+Ctrl + Click
+
+Meaning:
+Was Ctrl key pressed?
+-->
+
+<!--
+15. shiftKey
+Use:
+Checks whether Shift key is pressed.
+
+Example:
+Shift + Click
+
+Meaning:
+Was Shift key pressed?
+-->

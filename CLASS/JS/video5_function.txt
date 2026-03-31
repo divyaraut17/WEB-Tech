@@ -1,0 +1,86 @@
+Functions in JavaScript
+
+A function is a block of code that performs a task and can be reused.
+
+
+
+1 Function Declaration (Normal Function)
+
+function greet() {
+   console.log("Hello");
+}
+
+greet();   // Function call
+
+
+
+2 Function with Parameters
+
+function add(a, b) {
+   return a + b;
+}
+
+console.log(add(5, 3));  // 8
+
+ a and b are parameters
+ return sends value back
+
+
+
+3 Function Expression
+
+Function stored inside a variable.
+
+const multiply = function(a, b) {
+   return a * b;
+};
+
+console.log(multiply(4, 5));
+
+
+4 Arrow Function (ES6)
+
+Short syntax.
+
+const subtract = (a, b) => {
+   return a - b;
+};
+
+Shorter version:
+
+const square = x => x * x;
+
+
+5 Default Parameters
+
+function greet(name = "Guest") {
+   console.log("Hello " + name);
+}
+
+greet();   // Hello Guest
+
+
+
+6 Anonymous Function
+
+Function without name.
+
+setTimeout(function() {
+   console.log("Hello");
+}, 2000);
+
+
+
+
+Function is defined using function keyword
+
+Must call function to execute
+
+return gives output
+
+Arrow functions use =>
+
+Functions help in code reusability
+
+
+

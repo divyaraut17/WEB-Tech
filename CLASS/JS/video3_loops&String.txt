@@ -1,0 +1,115 @@
+Loops in JavaScript
+
+Loops are used to repeat a block of code multiple times.
+
+
+1 for Loop
+
+Used when number of iterations is known.
+
+for (let i = 1; i <= 5; i++) {
+   console.log(i);
+}
+ Output: 1 2 3 4 5
+
+
+
+ while Loop
+
+Runs while condition is true.
+
+let i = 1;
+
+while (i <= 5) {
+   console.log(i);
+   i++;
+}
+
+
+do...while Loop
+
+Runs at least one time (condition checked later).
+
+let i = 1;
+
+do {
+   console.log(i);
+   i++;
+} while (i <= 5);
+
+
+for...in Loop
+
+Used to loop through object properties.
+
+let student = {name: "Divya", age: 20};
+
+for (let key in student) {
+   console.log(key + " : " + student[key]);
+}
+
+ for...of Loop
+
+Used to loop through arrays or strings.
+
+let arr = [10, 20, 30];
+
+for (let value of arr) {
+   console.log(value);
+}
+
+
+break → stops loop
+
+continue → skips current iteration
+
+
+**Strings in JavaScript
+
+A string is a sequence of characters.
+
+let name = "Divya";
+
+
+1 String Length
+
+name.length
+
+
+2 Access Characters
+
+name[0]   // D
+
+
+3 Common String Methods
+
+Method	Use
+
+toUpperCase()	Converts to uppercase
+toLowerCase()	Converts to lowercase
+trim()	Removes spaces
+includes()	Checks text
+indexOf()	Finds position
+slice()	Extract part
+replace()	Replace text
+split()	Convert to array
+
+Example:
+
+let text = " Hello JS ";
+
+console.log(text.trim());
+console.log(text.toUpperCase());
+console.log(text.includes("JS"));
+
+
+for → fixed iterations
+
+while → condition-based
+
+do-while → runs at least once
+
+Strings are immutable (cannot change directly)
+
+Strings use index starting from 0
+

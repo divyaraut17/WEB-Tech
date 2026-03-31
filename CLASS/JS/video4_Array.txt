@@ -1,0 +1,81 @@
+ Array in JavaScript
+
+An array is used to store multiple values in a single variable.
+
+let numbers = [10, 20, 30, 40];
+
+
+ Accessing Array Elements
+
+Index starts from 0
+
+numbers[0]   // 10
+numbers[2]   // 30
+
+
+ Array Length
+
+numbers.length
+
+
+
+
+Method
+
+push()	Add element at end
+pop()	Remove last element
+shift()	Remove first element
+unshift()	Add element at beginning
+indexOf()	Find position
+includes()	Check value
+slice()	Extract part
+splice()	Add/Remove elements
+join()	Convert to string
+
+
+ Example:
+
+let fruits = ["Apple", "Mango", "Banana"];
+
+fruits.push("Orange");   // Add
+fruits.pop();            // Remove last
+console.log(fruits);
+
+
+
+ Looping Through Array
+
+1️⃣ Using for loop
+
+for (let i = 0; i < fruits.length; i++) {
+   console.log(fruits[i]);
+}
+
+2️⃣ Using for...of
+
+for (let item of fruits) {
+   console.log(item);
+}
+
+
+ Array of Objects
+
+let students = [
+   {name: "Divya", age: 20},
+   {name: "Rahul", age: 22}
+];
+
+console.log(students[0].name);
+
+
+Arrays are written using []
+
+Index starts from 0
+
+Arrays can store different data types
+
+Arrays are mutable (can be changed)
+
+push() adds, pop() removes from end
+
+

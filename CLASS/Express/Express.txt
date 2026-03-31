@@ -1,0 +1,33 @@
+Express --> Express is aminimal and flexible web application framework for node js that simplifies the development of web server and API.
+node js-- large application not work so we use
+
+features:
+1.routing
+2.middeleware support
+3.requeat and response handling
+4.REST API creation
+5.Templete Rendering
+
+npm -- node package manager
+
+
+.env-->port
+
+routing in express js--> routing refer to determining how an application respond to the client request for specific URL and HTTP method
+app.get('/')-- represent home page.
+app.get('/about)
+
+components of routing:
+1.http method
+2.URL path
+3.handler function
+
+middeleware---> middeleware in express js 
+middeleware fun are function that execute during the lifecycle of request before sending the final response
+they have access to req,res,next
+
+activity
+1.difference betw package.json and package -lock.json
+2.diff betw dev dependeancies and dependencies
+3.http requeat get, post,delete,put,use,patch
+4.js use project department name --home page, then mechanics,/cse./aiml/

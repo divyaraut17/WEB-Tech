@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Events Demo</title>
+
+    <style>
+        body {
+            background-color: #414141;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 15px;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            color: lightblue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Amazing Images (Click to Remove)</h2>
+
+    <ul id="images">
+        <li>
+            <img id="photoshop"
+                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+                alt="Photoshop Logo">
+        </li>
+
+        <li>
+            <img id="japan"
+                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+                onclick="alert('You clicked on Mount Fuji!')"
+                
+                alt="Mount Fuji">
+        </li>
+
+        <li>
+            <img id="Nature"
+                src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b"
+                alt="Nature Image">
+        </li>
+
+        <li>
+            <img id="photoman"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                alt="Photographer">
+        </li>
+
+        <li>
+            <img id="tiger"
+                src="https://images.unsplash.com/photo-1546182990-dffeafbe841d"
+                alt="Tiger">
+        </li>
+
+        <li>
+            <a href="https://google.com" id="google">Visit Google</a>
+        </li>
+    </ul>
+  </body>
+  <script>
+    document.getElementById('japan').onclick = function() {
+        alert('You clicked on Mount Fuji!');
+    };
+    document.getElementById('tiger').onclick = function() {
+        alert('You clicked on tiger!');
+    };
+    document.getElementById('Nature').onclick = function() {
+        alert('You clicked on Nature!');
+    };
+    document.getElementById('photoman').addEventListener('click',  function(e) {
+        console.log(e); // event object
+    });
+    document.getElementById('images').addEventListener('click',  function(e) {
+        console.log("clicking inside the ul"); // event object
+    },true);
+    document.getElementById('photoshop').addEventListener('click',  function(e) {
+        console.log("clicking on photoshop logo"); // event object
+    },true);
+     document.getElementById('google').addEventListener('click',  function(e) {
+        console.log("clicking on google link");
+         // event object
+        e.preventDefault(); // prevent default action of link
+    },true);
+  </script>
+  </html>
+<!-- what is event? -->
+<!--  event is an action that happens in the browser
+ex - clicking button ,moving mouse,pressing key ,submitting form,loading a page 
+      js can detect this events and respond to them
+      types of events - 
+      1.Mouse event -- click,mouseover,mouseout,mousemove,dblclick
+      2. Keyboard event -- keydown,keyup,keypress
+      3.browser event -- load,resize,scroll  -->
+
+<!-- onclick="alert('You clicked on Mount Fuji!')"
+- this is not good way ,html should 
+ contain structure and js contain logic ,mixing both is bad practice -->
+ <!-- select element
+     assign function to clink events
+     when click function run
+     
+     -->
+     <!-- Jquery use,type,timestamp,default prevented,target,sourceelemt,current tag,client x,client y, screen x,screeny
+      alt key,shift key,ctrl key -->
+      <!-- addenentlistern is a java script method used to attach an event handler to an html elemts so that specific actions can be performed when events occur -->
+    <!-- enent preposition -- envent bubbly -->
+     <!-- envent bubbly -- inner element to parent and parent to the doc
+      if phoshop image click then clicking ps and clicking ul brcaz child to parent bubble up
+       and when event capturing i.e. true then order become parent to child -->
+
+       <!-- activty  when click on image it should be remove and refereh it should apper again -->

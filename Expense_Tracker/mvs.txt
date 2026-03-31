@@ -1,0 +1,46 @@
+public class student(){
+    public id
+}
+
+mvs -- dotnet new mvc -n projectname
+model --
+student -- new file -- student.cs
+public class student(){
+    public int  id(get; set;)
+}
+StudentController.cs--
+controller -- logical layer,it is brain of mvc, it handles user request, connects model and view
+
+public class StudentController : controller{
+    public IActionResult index(){
+        return View();
+    }
+}
+
+view folder --- create folder student -- create file index.html 
+
+public class student(){
+    public int  id(get; set;)
+    public String email(get; se;)
+    public String name(get;set; )
+}
+public class StudentController : controller{
+    public IActionResult index(){
+        List<Student> student = new List<Student>()
+        {
+            new students{id=1,name="",email=""}
+            new students{id=1,name="",email=""}
+            new students{id=1,name="",email=""}
+
+        }
+
+        return View();
+    }
+}
+
+for each loop use
+data anotation -- are atributes used in model class to define validation users 
+properties--[requred,ErrorMessage=""requred]
+[String length(60)]
+[Range('18,60)]
+

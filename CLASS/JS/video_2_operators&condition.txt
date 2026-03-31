@@ -1,0 +1,148 @@
+ Operators in JavaScript
+
+Operators are used to perform operations on variables and values.
+
+ 1.Arithmetic Operators
+
+Used for mathematical calculations.
+
+Operator	Meaning	Example
+
++	Addition	a + b
+-	Subtraction	a - b
+*	Multiplication	a * b
+/	Division	a / b
+%	Modulus (remainder)	a % b
+++	Increment	a++
+--	Decrement	a--
+
+ 2.Assignment Operators
+
+Used to assign values.
+
+Operator	Example
+
+=	a = 10
++=	a += 5
+-=	a -= 5
+*=	a *= 2
+/=	a /= 2
+
+
+3 Comparison Operators
+
+Used to compare values (returns true/false).
+
+Operator	Meaning
+
+==	Equal (value only)
+===	Strict equal (value + type)
+!=	Not equal
+!==	Strict not equal
+>	Greater than
+<	Less than
+>=	Greater than or equal
+<=	Less than or equal
+
+
+👉 Example:
+
+5 == "5"   // true
+5 === "5"  // false
+
+
+4 Logical Operators
+
+Operator	Meaning
+
+&&	AND
+`	
+!	NOT
+
+
+Example:
+
+age > 18 && age < 60
+
+
+5 Type Operator
+
+Operator	Meaning
+
+typeof	Returns data type
+
+
+Example:
+
+typeof "Hello"   // string
+
+ Conditions in JavaScript
+
+Conditions are used to make decisions.
+
+
+
+1️⃣ if Statement
+
+if (condition) {
+   // code
+}
+
+
+2️⃣ if-else
+
+if (age >= 18) {
+   console.log("Adult");
+} else {
+   console.log("Minor");
+}
+
+
+3️⃣ else if
+
+if (marks >= 75) {
+   console.log("Distinction");
+} else if (marks >= 50) {
+   console.log("Pass");
+} else {
+   console.log("Fail");
+}
+
+
+4️⃣ switch Statement
+
+Used when checking multiple values.
+
+let day = 1;
+
+switch(day) {
+   case 1:
+      console.log("Monday");
+      break;
+   case 2:
+      console.log("Tuesday");
+      break;
+   default:
+      console.log("Invalid");
+}
+
+
+5️⃣ Ternary Operator (Short if-else)
+
+let result = (age >= 18) ? "Adult" : "Minor";
+
+
+== checks only value
+
+=== checks value + datatype
+
+&& → both conditions must be true
+
+|| → any one condition true
+
+! → opposite value
+
+switch uses break
+
+
+

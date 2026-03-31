@@ -1,0 +1,141 @@
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary div {
+    background: #eee;
+    padding: 10px;
+    width: 45%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#income {
+    color: green;
+}
+
+#expense {
+    color: red;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: blue;
+    color: white;
+    border: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #eee;
+    padding: 8px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+li.plus {
+    border-right: 5px solid green;
+}
+
+li.minus {
+    border-right: 5px solid red;
+}
+/* Align buttons properly */
+.btn-group {
+    display: flex;
+    gap: 5px;
+}
+
+/* Common style for both buttons */
+.btn-group button {
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Edit button */
+.edit-btn {
+    background: #007bff;
+}
+
+/* Delete button */
+.delete-btn {
+    background: red;
+}
+
+/* Hover effects */
+.edit-btn:hover {
+    background: #0056b3;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, blue, purple);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
