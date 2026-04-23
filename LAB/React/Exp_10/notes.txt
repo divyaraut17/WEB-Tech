@@ -1,0 +1,16 @@
+react --> is a libary
+what is react?
+--> react is js libary used to build user interfaces with the helps to create reusable components.
+JSX--> javascript+XML
+it allows writing html inside js.
+ex-
+const element = <h1> Hello student <h1>
+functional components -- simple js function that return JSX
+function(welcome){
+
+}
+what is react ,why we use, what is market hip
+what is JSX
+what is functional component in react
+what is props in react
+

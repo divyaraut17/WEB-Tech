@@ -1,0 +1,50 @@
+1.What is React?
+React is a JavaScript library used to build user interfaces (UI), especially for web apps.
+Created by Meta
+Used to build single-page applications (SPA)
+Works using components (small reusable pieces of UI)
+Example: Facebook, Instagram use React
+
+Why do we use React?
+We use React because:
+Fast → Uses Virtual DOM for better performance
+Reusable components → Write once, use multiple times
+Easy to manage UI → Code becomes structured
+Strong community & demand → Lots of jobs
+
+What is Market Hype of React?
+React has high market demand because:
+Widely used by big companies (Meta, Netflix, etc.)
+Huge job opportunities for frontend developers
+Easy to learn compared to frameworks
+Works with mobile apps too (React Native)
+In short: High demand + high salary + widely used = high market hype
+
+2.What is JSX?
+JSX (JavaScript XML) is a syntax used in React that looks like HTML but is written inside JavaScript.
+ Example:
+const element = <h1>Hello World</h1>;
+Makes code easier to read
+Gets converted into JavaScript behind the scenes
+
+3.What is Functional Component in React?
+A functional component is a simple JavaScript function that returns UI.
+ Example:
+function Welcome() {
+  return <h1>Hello User</h1>;
+}
+Easy to write
+Used with Hooks (like useState)
+Most commonly used in modern React
+
+4.What are Props in React?
+Props (short for properties) are used to pass data from one component to another.
+Example:
+function Welcome(props) {
+  return <h1>Hello {props.name}</h1>;
+}
+
+// Using component
+<Welcome name="Divya" />
+Props are read-only
+Used to make components dynamic

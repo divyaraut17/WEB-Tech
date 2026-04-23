@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="style.css">
+
+<div class="navbar">Dashboard</div>
+
+<div class="container">
+
+    <div class="card">
+        <h3>Add Event</h3>
+
+        <input type="text" id="title" placeholder="Event Title">
+        <input type="date" id="date">
+        <input type="text" id="location" placeholder="Location">
+        <input type="text" id="organizer" placeholder="Organizer">
+        <input type="text" id="description" placeholder="Description">
+        <input type="number" id="seats" placeholder="Seats">
+
+        <button onclick="addEvent()">Add Event</button>
+    </div>
+
+    <div class="card">
+        <h3>Search Event</h3>
+
+        <input type="text" id="search" placeholder="Search by title">
+        <button onclick="searchEvent()">Search</button>
+    </div>
+
+    <div class="card">
+        <h3>All Events</h3>
+
+        <button onclick="loadEvents()">Show Events</button>
+        <div id="eventList"></div>
+    </div>
+
+</div>
+
+<script src="app.js"></script>

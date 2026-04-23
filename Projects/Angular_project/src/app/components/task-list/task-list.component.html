@@ -1,0 +1,64 @@
+<div class="list-container">
+  <!-- Progress Bar -->
+  <div class="progress-section">
+    <div class="progress-container">
+      <div class="progress-bar" [style.width.%]="taskService.stats().progress"></div>
+    </div>
+    <div class="progress-text">
+      {{ taskService.stats().progress }}% Completed
+    </div>
+  </div>
+
+  <!-- Filters & Categories -->
+  <div class="filter-header">
+    <div class="category-tabs">
+      @for (cat of categories; track cat) {
+        <button 
+          (click)="setCategory(cat)"
+          [class.active]="taskService.selectedCategory() === cat"
+        >
+          {{ cat }}
+        </button>
+      }
+    </div>
+
+    <div class="status-filters">
+      @for (filter of filters; track filter.value) {
+        <button 
+          (click)="setFilter(filter.value)"
+          [class.active]="taskService.filter() === filter.value"
+        >
+          {{ filter.label }}
+        </button>
+      }
+    </div>
+  </div>
+
+  <!-- Tasks -->
+  <div class="tasks">
+    @for (task of taskService.filteredTasks(); track task.id) {
+      <app-task-item 
+        [task]="task"
+        (toggle)="toggleTask($event)"
+        (delete)="deleteTask($event)"
+        (toggleImportant)="toggleImportant($event)"
+        (update)="updateTask($event)"
+      />
+    } @empty {
+      <div class="empty-state">
+        <div class="icon">🔍</div>
+        <p>No tasks found.</p>
+      </div>
+    }
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <span>{{ taskService.stats().active }} items left</span>
+    @if (taskService.stats().completed > 0) {
+      <button class="clear-btn" (click)="clearCompleted()">
+        Clear Completed
+      </button>
+    }
+  </div>
+</div>

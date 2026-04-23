@@ -1,0 +1,53 @@
+React is a js libary, develpoed by META to build fast and interactive UI.
+ex-instagram
+
+activity-
+1.diffrence betw react and angular?
+
+why we use react-
+problem with js --
+full page reload
+complex DOM manupilation 
+hard to manage large app
+
+with react-->
+update only required part
+uses reusable components
+
+SPA(single page application)--page doesnot reload only contain change.
+ex-instagram,facebook
+
+virtual DOM--> react creates a copy of real DOM its called virtual DOM.
+when data changes react updates virtual DOM.
+update only change the parts in real DOM.
+
+result of virtual DOM -->high performance(instant result)
+
+npm
+node js
+react application
+
+vite --> vite is a fast build tool
+npm -- node package manager - install dependencies
+
+important file
+index.js--entry html file
+main.jsx--entry of react application
+app.jsx--root component /resuasble UI part
+
+JSX--JS+html
+JSX means it allow us to write html code inside the js code.
+const element =<h1>Hello</h1>
+
+rules --
+must return single parent
+use scope brackets for js
+
+components is heart of react
+2 types-
+functional component-- function()
+
+props-->
+properties
+data passing from parent to child.
+

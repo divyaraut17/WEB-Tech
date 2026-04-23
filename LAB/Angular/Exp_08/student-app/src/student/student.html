@@ -1,0 +1,20 @@
+<p>student works!</p>
+
+<h2>Student</h2>
+<p>Student Name: {{name}}</p>
+<p>Student Age: {{age}}</p>
+<p>Student Grade: {{grade}}</p>
+<p>Student Roll Number: {{rollNumber}}</p>
+
+<h2>Student Details</h2>
+<input type="text" [(ngModel)]="name" placeholder="Enter name">
+<input type="number" [(ngModel)]="age" placeholder="Enter age">
+<input type="text" [(ngModel)]="grade" placeholder="Enter grade">
+<input type="number" [(ngModel)]="rollNumber" placeholder="Enter roll number">
+
+
+<button (click)="updateStudent()">Update Student</button>
+
+<ul>
+    <li>*ngFor="let city of city">{{city}}</li>
+</ul>

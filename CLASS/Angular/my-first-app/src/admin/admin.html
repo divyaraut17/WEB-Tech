@@ -1,0 +1,19 @@
+<p>admin works!</p>
+{{fname}}
+
+<h2>Admin Details</h2>
+<p>Name: {{fname}}</p>
+<p>Age: {{age}}</p>
+<p>Email: {{email}}</p>
+
+<!-- two way binding -->
+<h2>Admin Details</h2>
+
+<input [(ngModel)]="fname" placeholder="Enter Name">
+<br><br>
+<input [(ngModel)]="age" placeholder="Enter Age" type="number">
+<br><br>
+<input [(ngModel)]="email" placeholder="Enter Email" type="email">
+
+<!-- event binding -->
+<button (click)="updateAdmin()">Update Admin</button>

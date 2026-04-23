@@ -1,0 +1,28 @@
+Angular is simple framwork devploed by google
+SPA-single page application
+
+package.json--configuration file
+packagelock.json-- configuration file,detail info is saved
+Angular.json--project config file 
+style.css --global css 
+git ingnore--file exculde from version control
+.editconfig--editor
+main.ts--entry point of app
+app.config.file 
+
+component is UI blocks of structure when we create component - component create 4 files html,css,typescript,spec.ts
+the command to create component is "-ng generate component name"
+spec .ts --unit
+
+there are 2 types of data binding --1 way and 2 --way
+1way -- there 3 types 
+interpolation--{{value}}
+propery--[property]="value"
+event--(event)="handler()"
+2 way --[(ngModel)]=""value
+
+data binding means connect UI  to code
+
+activity
+what is ng ifelse,ng
+how to use if else blocks, for loops, swicth cases in Angular?
