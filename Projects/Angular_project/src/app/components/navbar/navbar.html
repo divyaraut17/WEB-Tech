@@ -1,0 +1,32 @@
+<div class="sidebar">
+  <div class="sidebar-header">
+    <span class="logo-emoji">🍦</span>
+    <h2 class="sidebar-text">Scoop & Smile</h2>
+  </div>
+
+  <ul class="sidebar-nav">
+    <li>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <span class="icon">🏠</span>
+        <span class="sidebar-text">Home</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/admin" routerLinkActive="active">
+        <span class="icon">⚙️</span>
+        <span class="sidebar-text">Manage</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/billing" routerLinkActive="active">
+        <span class="icon">🧾</span>
+        <span class="sidebar-text">Billing</span>
+        <span class="sidebar-badge" *ngIf="cartCount > 0">{{cartCount}}</span>
+      </a>
+    </li>
+  </ul>
+
+  <div class="sidebar-footer sidebar-text">
+    <p>v1.0.0</p>
+  </div>
+</div>

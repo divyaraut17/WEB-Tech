@@ -1,0 +1,68 @@
+<div class="fade-in billing-page">
+  <div class="billing-main">
+    <div class="card bill-card">
+      <div class="bill-header">
+        <h1>Current <span>Bill</span></h1>
+        <button class="btn btn-secondary btn-sm" (click)="clearAll()" [disabled]="cartItems.length === 0">Clear Bill</button>
+      </div>
+
+      <div *ngIf="cartItems.length > 0; else empty">
+        <div class="items-list">
+          <div class="bill-item" *ngFor="let item of cartItems">
+            <div class="item-main">
+              <strong>{{item.iceCream.name}}</strong>
+              <span>{{item.iceCream.flavor}}</span>
+            </div>
+            <div class="item-controls">
+              <button (click)="decreaseQty(item.iceCream.id)">-</button>
+              <span class="qty">{{item.quantity}}</span>
+              <button (click)="increaseQty(item.iceCream.id)">+</button>
+            </div>
+            <div class="item-price">
+              ₹{{item.iceCream.price * item.quantity}}
+            </div>
+            <button class="btn-remove" (click)="removeItem(item.iceCream.id)">✕</button>
+          </div>
+        </div>
+
+        <div class="bill-summary card">
+          <div class="row">
+            <span>Subtotal</span>
+            <span>₹{{total}}</span>
+          </div>
+          <div class="row">
+            <span>GST (5%)</span>
+            <span>₹{{(total * 0.05).toFixed(0)}}</span>
+          </div>
+          <div class="row total">
+            <span>Total Amount</span>
+            <span>₹{{(total * 1.05).toFixed(0)}}</span>
+          </div>
+          <button class="btn btn-primary btn-block" (click)="checkout()">Print Receipt</button>
+        </div>
+      </div>
+
+      <ng-template #empty>
+        <div class="empty-bill">
+          <p>No items added. Select from the menu →</p>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+
+  <div class="inventory-sidebar">
+    <div class="card inventory-card">
+      <h2>Add <span>Items</span></h2>
+      <div class="inventory-list">
+        <div class="inventory-item" *ngFor="let ic of inventory" (click)="addToBill(ic)" [class.disabled]="!ic.isAvailable">
+          <div class="inv-info">
+            <strong>{{ic.name}}</strong>
+            <span>₹{{ic.price}}</span>
+          </div>
+          <div class="add-circle" *ngIf="ic.isAvailable">+</div>
+          <span class="out-label" *ngIf="!ic.isAvailable">Out</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

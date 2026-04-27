@@ -1,11 +1,13 @@
-<main class="app-container">
-  <header>
-    <h1>Taskly</h1>
-    <p class="subtitle">Stay organized, stay productive.</p>
-  </header>
+<div class="app-container">
+  <aside class="sidebar-container">
+    <app-navbar></app-navbar>
+  </aside>
 
-  <section class="card">
-    <app-task-input />
-    <app-task-list />
-  </section>
-</main>
+  <main class="main-content">
+    <router-outlet></router-outlet>
+    
+    <footer>
+      <p>&copy; 2026 Scoop & Smile Ice Cream Parlor</p>
+    </footer>
+  </main>
+</div>

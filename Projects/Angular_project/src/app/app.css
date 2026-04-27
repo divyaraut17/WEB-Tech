@@ -1,21 +1,12 @@
-.app-container {
-  width: 100%;
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
+footer {
+  margin: 4rem 2rem 2rem;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 30px;
+  color: #666;
+  font-size: 0.9rem;
 }
 
-header {
-  margin-bottom: 24px;
-}
-
-.card {
-  background: var(--card-bg);
-  padding: 24px;
-  border-radius: 12px;
-  border: 1px solid var(--border-color);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+main {
+  min-height: calc(100vh - 250px);
 }

@@ -1,0 +1,33 @@
+<h2 class="title">Products</h2>
+
+<!-- Search only once -->
+<div class="search-box">
+<input
+type="text"
+placeholder="Search product"
+[(ngModel)]="searchText"
+/>
+</div>
+
+<div class="product-container">
+
+<div
+class="product-card"
+*ngFor="let product of filteredProducts"
+>
+
+
+
+<h3>{{product.name}}</h3>
+
+<p class="price">
+₹{{product.price}}
+</p>
+
+<button (click)="addToCart(product)">
+Add to Cart
+</button>
+
+</div>
+
+</div>

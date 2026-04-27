@@ -1,0 +1,71 @@
+<div class="fade-in">
+  <div class="admin-layout">
+    <div class="card form-card">
+      <h2>{{ editingIceCream ? 'Edit' : 'Add' }} Ice Cream</h2>
+      <form (ngSubmit)="onSubmit()" #iceCreamForm="ngForm">
+        <div class="field">
+          <label>Name</label>
+          <input type="text" name="name" [(ngModel)]="newIceCream.name" required>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Flavor</label>
+            <input type="text" name="flavor" [(ngModel)]="newIceCream.flavor" required placeholder="e.g. Mango">
+          </div>
+          <div class="field">
+            <label>Price (₹)</label>
+            <input type="number" name="price" [(ngModel)]="newIceCream.price" required min="0">
+          </div>
+        </div>
+        <div class="field">
+          <label>Description</label>
+          <textarea name="description" [(ngModel)]="newIceCream.description" rows="2"></textarea>
+        </div>
+        <div class="field checkbox">
+          <input type="checkbox" id="avail" name="isAvailable" [(ngModel)]="newIceCream.isAvailable">
+          <label for="avail">In Stock</label>
+        </div>
+        <div class="actions">
+          <button type="submit" class="btn btn-primary" [disabled]="!iceCreamForm.form.valid">Save</button>
+          <button type="button" class="btn btn-secondary" *ngIf="editingIceCream" (click)="cancelEdit()">Cancel</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="card table-card">
+      <h2>Stock <span>Management</span></h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Status</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let ic of iceCreams">
+              <td>
+                <div class="name-info">
+                  <strong>{{ic.name}}</strong>
+                  <span>{{ic.flavor}}</span>
+                </div>
+              </td>
+              <td>
+                <button (click)="toggleStock(ic)" class="status-btn" [class.out]="!ic.isAvailable">
+                  {{ ic.isAvailable ? 'In Stock' : 'Out of Stock' }}
+                </button>
+              </td>
+              <td>₹{{ic.price}}</td>
+              <td class="table-actions">
+                <button (click)="editIceCream(ic)" class="edit-icon">✏️</button>
+                <button (click)="deleteIceCream(ic.id)" class="del-icon">🗑️</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

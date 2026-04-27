@@ -1,0 +1,180 @@
+.billing-page {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.bill-card {
+  margin: 0;
+}
+
+.bill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.bill-header h1 span {
+  color: var(--primary);
+}
+
+.bill-item {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr 40px;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.item-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-main span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.item-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: #f8f9fa;
+  padding: 4px 10px;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.item-controls button {
+  background: none;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--primary);
+}
+
+.item-price {
+  font-weight: 700;
+  text-align: right;
+}
+
+.btn-remove {
+  background: none;
+  border: none;
+  color: #ff4757;
+  cursor: pointer;
+}
+
+.bill-summary {
+  margin-top: 2rem;
+  background: #f8f9fa;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.row.total {
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-block {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 15px;
+}
+
+.empty-bill {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-muted);
+}
+
+/* Inventory Sidebar */
+.inventory-card h2 span {
+  color: var(--primary);
+}
+
+.inventory-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.inventory-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.inventory-item:hover {
+  transform: translateX(5px);
+  background: #fff0f3;
+}
+
+.inventory-item.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #eee;
+}
+
+.inv-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.inv-info span {
+  font-size: 0.8rem;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.add-circle {
+  width: 32px;
+  height: 32px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: transform 0.2s;
+}
+
+.inventory-item:hover .add-circle {
+  transform: rotate(90deg) scale(1.1);
+}
+
+.out-label {
+  font-size: 0.7rem;
+  background: #888;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+@media (max-width: 900px) {
+  .billing-page {
+    grid-template-columns: 1fr;
+  }
+}

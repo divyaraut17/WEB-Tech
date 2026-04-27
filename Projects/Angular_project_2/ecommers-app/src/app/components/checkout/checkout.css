@@ -1,0 +1,39 @@
+.checkout-title{
+text-align:center;
+margin:40px 0;
+font-size:42px;
+}
+
+.checkout-box{
+width:420px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:2px 2px 12px #ddd;
+
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.checkout-box input{
+padding:12px;
+font-size:16px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+.checkout-box button{
+padding:14px;
+border:none;
+background:#28a745;
+color:white;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.checkout-box button:hover{
+background:#218838;
+}
